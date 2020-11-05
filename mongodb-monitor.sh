@@ -8,5 +8,5 @@ if [[ "$healthcheck" != "1" ]]
 then
 	echo "Mongodb Service não esta rodando"
 	curl -d chat_id="$chat_id" -d text="Mensagem do texto" https://api.telegram.org/bot$api_token/sendMessage
-	sudo service mongod start
+	# sudo service mongod start
 fi
